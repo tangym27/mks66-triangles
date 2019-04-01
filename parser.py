@@ -67,19 +67,19 @@ def parse_file( fname, edges, polygons, transform, screen, color ):
             args = lines[c].strip().split(' ')
 
         if line == 'sphere':
-            print 'SPHERE\t' + str(args)
+            #print 'SPHERE\t' + str(args)
             add_sphere(polygons,
                        float(args[0]), float(args[1]), float(args[2]),
                        float(args[3]), step_3d)
 
         elif line == 'torus':
-            print('TORUS\t' + str(args))
+            #print('TORUS\t' + str(args))
             add_torus(polygons,
                       float(args[0]), float(args[1]), float(args[2]),
                       float(args[3]), float(args[4]), step_3d)
 
         elif line == 'box':
-            print('BOX\t' + str(args))
+            #print('BOX\t' + str(args))
             add_box(polygons,
                     float(args[0]), float(args[1]), float(args[2]),
                     float(args[3]), float(args[4]), float(args[5]))
